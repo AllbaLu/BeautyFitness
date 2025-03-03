@@ -4,17 +4,17 @@ import ScrollToTop from "./component/scrollToTop";
 import { BackendURL } from "./component/backendURL";
 
 import { Home } from "./pages/home";
-import { Demo } from "./pages/demo";
+import {NavBar} from "./component/navBar"
 import { Login } from "./pages/login";
 import { SignUp } from "./pages/signUp";
 import injectContext from "./store/appContext";
 
-import { Navbar } from "./component/navbar";
-import { Footer } from "./component/footer";
+
+import  Footer  from "./component/footer";
 import { UpdateProfile } from "./pages/updateProfile";
 
 import Profile from"./pages/profile";
-import Single from "./pages/single"; // Importa el componente Single
+
 import Workout from "./pages/workout"; // Importa el componente Workout
 import WorkoutList from "./pages/workoutList"; // Importa el componente WorkoutList
 import ProfileExperienceLevel from"./pages/profileExperienceLevel";
@@ -44,7 +44,7 @@ const Layout = () => {
                         <Route element={<Login />} path="/login" />
                         <Route element={<SignUp />} path="/signup" />
                         <Route element={<UpdateProfile />} path="/update-profile" />
-                        <Route element={<Single />} path="/single" /> {/* Asegúrate de que esta ruta sea única */}
+                       
                         {/* <Route element={<Single />} path="/single/:theid" /> */}
                         <Route element={<Workout />} path="/workout" /> 
                         <Route element={<WorkoutList />} path="/workoutList" /> 
